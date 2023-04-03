@@ -14,9 +14,11 @@ import model.Login;
  */
 
 public class AccountsDAO {
+	// データベースに接続するための情報
 	private final String JDBC_URL = "jdbc:postgresql://localhost:5432/sukkiriShop";
 	private final String DB_USER = "postgres";
 	private final String DB_PASS = "gkf798092";
+	
 	
 	public Account findByLogin(Login login) {
 		Account account = null;
