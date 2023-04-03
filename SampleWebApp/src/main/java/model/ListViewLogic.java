@@ -7,7 +7,7 @@ import dao.ListViewDAO;
 public class ListViewLogic {
 	public List<ListView> excute(){
 		ListViewDAO dao = new ListViewDAO();
-		List<ListView> listView = dao.findAll();
-		return listView;
+		List<ListView> lvList = dao.findAll();
+		return lvList;
 	}
 }

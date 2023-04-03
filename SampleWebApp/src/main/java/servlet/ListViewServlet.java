@@ -30,8 +30,8 @@ public class ListViewServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ListViewLogic getListViewLogic = new ListViewLogic();
-		List<ListView> listView = getListViewLogic.excute();
-		request.setAttribute("listView", listView);
+		List<ListView> lvList = getListViewLogic.excute();
+		request.setAttribute("lvList", lvList);
 		
 		// 一覧画面へのフォワード
 		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/listView.jsp");

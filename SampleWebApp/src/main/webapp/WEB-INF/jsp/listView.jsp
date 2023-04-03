@@ -4,7 +4,7 @@
 <%@ page import="model.ListView,java.util.List" %>
 
 <%  
-List<ListView> listView = (List<ListView>) request.getAttribute("listView");
+List<ListView> lvList = (List<ListView>) request.getAttribute("listView");
 %>
 <!DOCTYPE html>
 <html>
@@ -20,7 +20,7 @@ List<ListView> listView = (List<ListView>) request.getAttribute("listView");
 			<th>氏名</th>
 			<th>年齢</th>
 		</tr>
-		<% for(ListView list: listView){ %>
+		<% for(ListView list: lvList){ %>
 			<tr>
 				<td><%= list.getUserId() %></td>
 				<td><%= list.getName() %></td>
