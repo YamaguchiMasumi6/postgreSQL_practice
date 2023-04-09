@@ -34,7 +34,7 @@ public class ListViewDAO {
 			try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)){
 				
 				// SELECT文を準備
-				String sql = "SELECT user_id,name,age FROM public.accounts";
+				String sql = "SELECT user_id,name,age FROM accounts";
 				PreparedStatement pStmt = conn.prepareStatement(sql);
 				
 				// SELECT文を実行し、結果表を取得

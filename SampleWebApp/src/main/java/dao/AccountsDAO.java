@@ -33,7 +33,7 @@ public class AccountsDAO {
 		try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)){
 			
 			// SELECT文を準備
-			String sql = "SELECT * FROM public.accounts WHERE USER_ID = ? AND PASS = ?";
+			String sql = "SELECT * FROM accounts WHERE USER_ID = ? AND PASS = ?";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
 			pStmt.setString(1, login.getUserId());
 			pStmt.setString(2, login.getPass());

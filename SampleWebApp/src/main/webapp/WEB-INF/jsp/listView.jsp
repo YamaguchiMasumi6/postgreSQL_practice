@@ -4,7 +4,7 @@
 <%@ page import="model.ListView,java.util.List" %>
 
 <%  
-List<ListView> lvList = (List<ListView>) request.getAttribute("listView");
+List<ListView> lvList = (List<ListView>) request.getAttribute("lvList");
 %>
 <!DOCTYPE html>
 <html>
