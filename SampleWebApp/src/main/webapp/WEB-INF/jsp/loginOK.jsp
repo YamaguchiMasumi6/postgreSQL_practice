@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +9,8 @@
 <title>スッキリ商店</title>
 </head>
 <body>
-	<p>ようこそ さん</p>
+	<p>ようこそ</p>
 	<a href="Welcome">トップへ</a>
-	<a href="">一覧画面へ</a>
+	<a href="List">一覧画面へ</a>
 </body>
 </html>

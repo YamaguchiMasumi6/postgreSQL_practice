@@ -56,8 +56,6 @@ public class LoginServlet extends HttpServlet {
 			// リダイレクト
 			response.sendRedirect("Login");
 		}
-		
-		
 	}
 
 }
